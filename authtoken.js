@@ -8,7 +8,7 @@ generateJwt = user1 => {
         iat:Math.floor(Date.now()/1000),
         
     },
-    process.env.secret,{
+    "password",{
         expiresIn:'5m'
     });
 }
